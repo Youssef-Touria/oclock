@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'clock - Gestion du temps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>⏰ O'clock</h1>
+
+        <div class="grid">
+            <!-- HORLOGE -->
+            <div class="card">
+                <h2>🕐 Horloge</h2>
+                <div class="display" id="clock-display">00:00:00</div>
+                <p style="text-align: center; color: #6c757d;">Heure française (UTC+1)</p>
+            </div>
+
+            <!-- MINUTEUR -->
+            <div class="card">
+                <h2>⏱️ Minuteur</h2>
+                <div class="timer-inputs">
+                    <div>
+                        <label>Heures</label>
+                        <input type="number" id="timer-hours" min="0" max="23" value="0">
+                    </div>
+                    <div>
+                        <label>Minutes</label>
+                        <input type="number" id="timer-minutes" min="0" max="59" value="1">
+                    </div>
+                    <div>
+                        <label>Secondes</label>
+                        <input type="number" id="timer-seconds" min="0" max="59" value="0">
+                    </div>
+                </div>
+                <div class="display" id="timer-display">00:01:00</div>
+                <div class="controls">
+                    <button class="btn-primary" id="timer-start">Démarrer</button>
+                    <button class="btn-secondary" id="timer-reset">Réinitialiser</button>
+                </div>
+            </div>
+
+            <!-- CHRONOMÈTRE -->
+            <div class="card">
+                <h2>⏲️ Chronomètre</h2>
+                <div class="display" id="stopwatch-display">00:00:00</div>
+                <div class="controls">
+                    <button class="btn-primary" id="stopwatch-start">Démarrer</button>
+                    <button class="btn-success" id="stopwatch-lap">Tour</button>
+                    <button class="btn-secondary" id="stopwatch-reset">Réinitialiser</button>
+                </div>
+                <div class="laps-list" id="laps-list"></div>
+            </div>
+
+            <!-- RÉVEIL -->
+            <div class="card">
+                <h2>⏰ Réveil</h2>
+                <div class="alarm-form">
+                    <input type="time" id="alarm-time" placeholder="Heure">
+                    <input type="text" id="alarm-message" placeholder="Message de l'alarme">
+                    <button class="btn-success" id="alarm-add">Ajouter une alarme</button>
+                </div>
+                <div class="alarms-list" id="alarms-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="alert" id="alert-box">
+        <h3 id="alert-title">⏰ Alerte</h3>
+        <p id="alert-message">Le temps est écoulé !</p>
+        <button class="btn-primary" id="alert-close">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
