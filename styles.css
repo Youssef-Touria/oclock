@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #667eea;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: #16213e;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+section h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+ #clock {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+}

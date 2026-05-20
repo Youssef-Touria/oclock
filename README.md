@@ -1,16 +1,15 @@
 # ⏰ O'clock
 
-O'clock est une application web de gestion du temps réalisée en **HTML, CSS et JavaScript**.
-
-## Fonctionnalités
+O'clock est une application web de gestion du temps réalisée en HTML, CSS et JavaScript.
+Fonctionnalités
 
 - Horloge en temps réel  
 - Minuteur  
 - Chronomètre  
 - Réveil avec message
 
-## Structure du projet
-```
+ Structure du projet
+
 oclock/
 ├── index.html
 ├── style.css
@@ -26,10 +25,4 @@ oclock/
 
 Aucune librairie externe n’est utilisée.
 
-## Lancer le projet
 
-Ouvrir le fichier `index.html` dans un navigateur.
-
-## Auteur
-
-Projet réalisé dans un cadre pédagogique.
