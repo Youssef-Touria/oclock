@@ -125,7 +125,7 @@ function verifierAlarmes() {
             li.textContent = alarme.heure + " - " + alarme.message + " (passée)";
             if (!alarme.sonnee) {
                 const div = document.createElement("div");
-                div.textContent = "🚨 ALERTE : " + alarme.message;
+                div.textContent = " ALERTE : " + alarme.message;
                 div.style.color = "red";
                 zoneAlertes.appendChild(div);
                 alarme.sonnee = true;
